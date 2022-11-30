@@ -1,0 +1,627 @@
+<!DOCTYPE html><html lang="en"><head>
+    <meta charset="utf-8">
+    <title>BookIt - Home</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <script src="https://kit.fontawesome.com/751b3a69bc.js" crossorigin="anonymous"></script>
+    <link href="./css/vendors/aos.css" rel="stylesheet">
+    <link href="./style.css" rel="stylesheet">
+</head>
+
+<body class="ct hv bg-white ck cw">
+
+    <!-- Page wrapper -->
+    <div class="ii oz i_ uv">
+
+        <!-- Site header -->
+        <header class="k ij tf mz hq pt po" x-data="{ top: true }" @scroll.window="top = window.pageYOffset > 10 ? false : true" :class="{ 'bg-white hj shadow-lg' : !top }">
+            <div class="sc tj fc vs">
+                <div class="ii un uo ia mr">
+
+                    <!-- Site branding -->
+                    <div class="s_ np">
+                        <!-- Logo -->
+                        <a class="block" href="index.html" aria-label="BookIt">BookIt
+                        </a>
+                    </div>
+
+                    <!-- Desktop navigation -->
+                    <nav class="hidden me mh">
+
+                        <!-- Desktop menu links -->
+                        <ul class="ii sj ui ue un">
+                            <li>
+                                <a class="c_ pm fh ya fp ii un hq pn po" href="pricing.html">Pricing</a>
+                            </li>
+                            <li>
+                                <a class="c_ pm fh ya fp ii un hq pn po" href="about.html">About us</a>
+                            </li>
+                            <li>
+                                <a class="cc cn c_ pm ii fp fc cg" href="404.html" @focus="open = true" @focusout="open = false">404</a>
+                            </li>
+                        </ul>
+
+                        <!-- Desktop sign in links -->
+                        <ul class="ii sj ui ue un">
+                            <li>
+                                <a class="cc c_ pm fc fd ii un hq pn po" href="signin.html">Login</a>
+                            </li>
+                            <li>
+                                <a class="r cq ao pf nm" href="signup.html">
+                                    <span>Sign up</span>
+                                    <svg class="iz il ft cj s_ ng ny" viewBox="0 0 12 12" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M11.707 5.293L7 .586 5.586 2l3 3H0v2h8.586l-3 3L7 11.414l4.707-4.707a1 1 0 000-1.414z" fill-rule="nonzero"></path>
+                                    </svg>
+                                </a>
+                            </li>
+                        </ul>
+
+                    </nav>
+                    
+                    <!-- Mobile menu -->
+                    <div class="ii mn" x-data="{ expanded: false }">
+
+                        <!-- Hamburger button -->
+                        <button class="l" :class="{ 'active': expanded }" @click.stop="expanded = !expanded" aria-controls="mobile-nav" :aria-expanded="expanded">
+                            <span class="b">Menu</span>
+                            <svg class="st ic ft ck" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                <rect y="4" width="24" height="2"></rect>
+                                <rect y="11" width="24" height="2"></rect>
+                                <rect y="18" width="24" height="2"></rect>
+                            </svg>
+                        </button>
+
+                        <!-- Mobile navigation -->
+                        <nav id="mobile-nav" class="_ te ih ln tl tn ij um bg-white" @click.outside="expanded = false" @keydown.escape.window="expanded = false" x-show="expanded" x-transition:enter="hq pu pr om" x-transition:enter-start="hg ot" x-transition:enter-end="hy on" x-transition:leave="hq pu pr" x-transition:leave-start="hy" x-transition:leave-end="hg" x-cloak="">
+                            <ul class="fc fp">
+                                <li>
+                                    <a class="ii c_ pm fp" href="pricing.html">Pricing</a>
+                                </li>
+                                <li>
+                                    <a class="ii c_ pm fp" href="about.html">About us</a>
+                                </li>
+                                <li>
+                                    <a class="ii cc ij c_ pm fp us" href="signin.html">Sign in</a>
+                                </li>
+                                <li>
+                                    <a class="r cq ao pf ij tq" href="signup.html">
+                                        <span>Sign up</span>
+                                        <svg class="iz il ft cj s_ ng ny" viewBox="0 0 12 12" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M11.707 5.293L7 .586 5.586 2l3 3H0v2h8.586l-3 3L7 11.414l4.707-4.707a1 1 0 000-1.414z" fill="#999" fill-rule="nonzero"></path>
+                                        </svg>
+                                    </a>
+                                </li>
+                            </ul>
+                        </nav>
+
+                    </div>
+
+                </div>
+            </div>
+        </header>
+
+        <!-- Page content -->
+        <main class="sj">
+            
+            <!-- Hero -->
+            <section class="j">
+
+                <!-- Illustration behind hero content -->
+                <div class="_ tr om or ti w tc" aria-hidden="true">
+                    <!-- <svg width="1360" height="578" viewBox="0 0 1360 578" xmlns="http://www.w3.org/2000/svg">
+                        <defs>
+                            <linearGradient x1="50%" y1="0%" x2="50%" y2="100%" id="illustration-01">
+                                <stop stop-color="#FFF" offset="0%"></stop>
+                                <stop stop-color="#EAEAEA" offset="77.402%"></stop>
+                                <stop stop-color="#DFDFDF" offset="100%"></stop>
+                            </linearGradient>
+                        </defs>
+                        <g fill="url(#illustration-01)" fill-rule="evenodd">
+                            <circle cx="1232" cy="128" r="128"></circle>
+                            <circle cx="155" cy="443" r="64"></circle>
+                        </g>
+                    </svg> -->
+                </div>
+
+                <div class="sc tj fv vs">
+
+                    <!-- Hero content -->
+                    <div class="li ls gs go">
+
+                        <!-- Section header -->
+                        <div class="ce ls gu">
+                            <h1 class="co gp cd cb cx nw" data-aos="zoom-y-out">Delivering your package <span class="fe hu ag ab aj">Swiftly &amp; Easily.</span></h1>
+                            <div class="sh tj">
+                                <p class="cr c_ nz" data-aos="zoom-y-out" data-aos-delay="150">Your courier service that is dependable, quick, and of high quality. Putting your package's safety first.</p>
+                                <div class="sp tj dj db vr" data-aos="zoom-y-out" data-aos-delay="300">
+                                    <div>
+                                        <a class="n cz au pf ij nw dx dv" href="#0" id="myBtn">Book Now</a>
+                                    </div>
+                                    <div>
+                                        <a class="n cz ao pf ij dx dg" href="#0">Learn more</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- The Modal -->
+                    <div id="myModal" class="modal">
+                        <!-- Modal content -->
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <span class="close">&times;</span>
+                                <h2>Book It Now</h2>
+                                <p class="ce ci hb">We have a generous free tier available to get you started right away.</p>
+                            </div>
+                            <div class="modal-body">
+                                <div class="form-group">
+                                    <i class="fa-regular fa-location-dot"></i>
+                                    <input type="text" class="form-input" placeholder="From">
+                                </div>
+                                <div class="form-group">
+                                    <input type="text" class="form-input" placeholder="To">
+                                </div>
+                                <div class="form-group">
+                                    <input type="date" class="form-input he" placeholder="Date">
+                                </div>
+                                <div class="form-group">
+                                    <input type="email" placeholder="Email" class="form-input he">
+                                </div>
+                                <div class="form-group">
+                                    <input type="text" class="form-input he" placeholder="Checkout">
+                                </div>
+                            </div>
+                            <div class="modal-footer">
+                                <a href="#" class="n cz au pf ij nw dx dv form-input">Pay Now</a>
+                            </div>
+                        </div>
+                    </div>
+
+                        <!-- Hero image -->
+                        <div x-data="{ modalExpanded: false }">
+                            <div class="j ii us nz" data-aos="zoom-y-out" data-aos-delay="450">
+                                <div class="ii oz us">
+                                    <img class="tj uy hx" src="./images/header.png" width="768" height="432" alt="Hero">
+                                    <svg class="_ z sm tj mf ip" width="768" height="432" viewBox="0 0 768 432" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                        <defs>
+                                            <linearGradient x1="50%" y1="0%" x2="50%" y2="100%" id="hero-ill-a">
+                                                <stop stop-color="#FFF" offset="0%"></stop>
+                                                <stop stop-color="#EAEAEA" offset="77.402%"></stop>
+                                                <stop stop-color="#DFDFDF" offset="100%"></stop>
+                                            </linearGradient>
+                                            <linearGradient x1="50%" y1="0%" x2="50%" y2="99.24%" id="hero-ill-b">
+                                                <stop stop-color="#FFF" offset="0%"></stop>
+                                                <stop stop-color="#EAEAEA" offset="48.57%"></stop>
+                                                <stop stop-color="#DFDFDF" stop-opacity="0" offset="100%"></stop>
+                                            </linearGradient>
+                                            <radialGradient cx="21.152%" cy="86.063%" fx="21.152%" fy="86.063%" r="79.941%" id="hero-ill-e">
+                                                <stop stop-color="#4FD1C5" offset="0%"></stop>
+                                                <stop stop-color="#81E6D9" offset="25.871%"></stop>
+                                                <stop stop-color="#338CF5" offset="100%"></stop>
+                                            </radialGradient>
+                                            <circle id="hero-ill-d" cx="384" cy="216" r="64"></circle>
+                                        </defs>
+                                        <g fill="none" fill-rule="evenodd">
+                                            <circle fill-opacity=".04" fill="url(#hero-ill-a)" cx="384" cy="216" r="128"></circle>
+                                            <circle fill-opacity=".16" fill="url(#hero-ill-b)" cx="384" cy="216" r="96"></circle>
+                                            <g fill-rule="nonzero">
+                                                <use fill="#000" xlink:href="#hero-ill-d"></use>
+                                                <use fill="url(#hero-ill-e)" xlink:href="#hero-ill-d"></use>
+                                            </g>
+                                        </g>
+                                    </svg>
+                                </div>
+                            </div>
+
+                            <!-- Modal backdrop -->
+                            <div class="k z th bg-white av hz hj" x-show="modalExpanded" x-transition:enter="hq pu pr" x-transition:enter-start="hg" x-transition:enter-end="hy" x-transition:leave="hq pu pi" x-transition:leave-start="hy" x-transition:leave-end="hg" aria-hidden="true" x-cloak=""></div>
+
+                            <!-- Modal dialog -->
+                            <div id="modal" class="k z th uv ii un us om fv vs" role="dialog" aria-modal="true" aria-labelledby="modal-headline" x-show="modalExpanded" x-transition:enter="hq pu pr" x-transition:enter-start="hg op" x-transition:enter-end="hy od" x-transition:leave="hq pu pr" x-transition:leave-start="hy od" x-transition:leave-end="hg op" x-cloak="">
+                                <div class="bg-white ud sc ij ik" @click.outside="modalExpanded = false" @keydown.escape.window="modalExpanded = false">
+                                    <div class="j lv">
+                                        <iframe class="_ ij ib" src="https://www.youtube.com/embed/qz4F1uMzihY" title="Video" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen=""></iframe>
+                                    </div>
+                                </div>
+                            </div>
+                    
+                        </div>
+                        
+                    </div>
+
+                </div>
+            </section>
+
+            
+            <!-- Features -->
+            <section class="j">
+
+                <!-- Section background (needs .relative class on parent and next sibling elements) -->
+                <div class="_ z af w rh" aria-hidden="true"></div>
+                <div class="_ tn tt tw sn fu iw bg-gray-200 om oi"></div>
+
+                <div class="j sc tj fv vs">
+                    <div class="lm ga">
+
+                        <!-- Section header -->
+                        <div class="sh tj ce ls gu">
+                            <h2 class="h2 nw">How BookIt works</h2>
+                            <p class="cr c_">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur excepteur sint occaecat cupidatat.</p>
+                        </div>
+
+                        <!-- Section content -->
+                        <div class="mt mm m_" x-data="{ tab: '1' }">
+                            <!-- Content -->
+                            <div class="sy mf mo tj vp gm v_">
+                                <!-- Tabs buttons -->
+                                <div class="nz vb">                        
+                                    <button :class="tab !== '1' ? 'bg-white shadow-md border-gray-200 py' : 'bg-gray-200 border-transparent'" class="lz ii un ci fa uy uk hq pt po nq" @click.prevent="" @click="tab = '1'">
+                                        <div>
+                                            <div class="ch cy cw re">1</div>
+                                            <div class="c_">Take collaboration to the next level with security and administrative features built for teams.</div>
+                                        </div>
+                                        <div class="ii us un iq if bg-white ub shadow s_ nm">
+                                            <svg class="iz il ft" viewBox="0 0 12 12" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M11.953 4.29a.5.5 0 00-.454-.292H6.14L6.984.62A.5.5 0 006.12.173l-6 7a.5.5 0 00.379.825h5.359l-.844 3.38a.5.5 0 00.864.445l6-7a.5.5 0 00.075-.534z"></path>
+                                            </svg>
+                                        </div>
+                                    </button>
+                                    <button :class="tab !== '2' ? 'bg-white shadow-md border-gray-200 py' : 'bg-gray-200 border-transparent'" class="lz ii un ci fa uy uk hq pt po nq" @click.prevent="" @click="tab = '2'">
+                                        <div>
+                                            <div class="ch cy cw re">2</div>
+                                            <div class="c_">Take collaboration to the next level with security and administrative features built for teams.</div>
+                                        </div>
+                                        <div class="ii us un iq if bg-white ub shadow s_ nm">
+                                            <svg class="iz il ft" viewBox="0 0 12 12" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M11.854.146a.5.5 0 00-.525-.116l-11 4a.5.5 0 00-.015.934l4.8 1.921 1.921 4.8A.5.5 0 007.5 12h.008a.5.5 0 00.462-.329l4-11a.5.5 0 00-.116-.525z" fill-rule="nonzero"></path>
+                                            </svg>
+                                        </div>
+                                    </button>
+                                    <button :class="tab !== '3' ? 'bg-white shadow-md border-gray-200 py' : 'bg-gray-200 border-transparent'" class="lz ii un ci fa uy uk hq pt po" @click.prevent="" @click="tab = '3'">
+                                        <div>
+                                            <div class="ch cy cw re">3</div>
+                                            <div class="c_">Take collaboration to the next level with security and administrative features built for teams.</div>
+                                        </div>
+                                        <div class="ii us un iq if bg-white ub shadow s_ nm">
+                                            <svg class="iz il ft" viewBox="0 0 12 12" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M11.334 8.06a.5.5 0 00-.421-.237 6.023 6.023 0 01-5.905-6c0-.41.042-.82.125-1.221a.5.5 0 00-.614-.586 6 6 0 106.832 8.529.5.5 0 00-.017-.485z" fill="#191919" fill-rule="nonzero"></path>
+                                            </svg>
+                                        </div>
+                                    </button>
+                                </div>
+                            </div>
+
+                            <!-- Tabs items -->
+                            <div class="sy mf mo tj vd gm nz vb vc" data-aos="zoom-y-out">
+                                <div class="j ii oz ce yc">
+                                    <!-- Item 1 -->
+                                    <div class="ij" x-show="tab === '1'" x-transition:enter="hq po ps om td" x-transition:enter-start="hg os" x-transition:enter-end="hy on" x-transition:leave="hq po pt om _" x-transition:leave-start="hy on" x-transition:leave-end="hg oo">
+                                        <div class="j is oz">
+                                            <img class="mf tj uy" src="./images/timeline.svg" width="500" height="375" alt="Features bg">
+                                        </div>
+                                    </div>
+                                    <!-- Item 2 -->
+                                    <div class="ij" x-show="tab === '2'" x-transition:enter="hq po ps om td" x-transition:enter-start="hg os" x-transition:enter-end="hy on" x-transition:leave="hq po pt om _" x-transition:leave-start="hy on" x-transition:leave-end="hg oo">
+                                        <div class="j is oz">
+                                            <img class="mf tj uy" src="./images/timeline.png" width="500" height="375" alt="Features bg">                     
+                                        </div>
+                                    </div>
+                                    <!-- Item 3 -->
+                                    <div class="ij" x-show="tab === '3'" x-transition:enter="hq po ps om td" x-transition:enter-start="hg os" x-transition:enter-end="hy on" x-transition:leave="hq po pt om _" x-transition:leave-start="hy on" x-transition:leave-end="hg oo">
+                                        <div class="j is oz">
+                                            <img class="mf tj uy" src="./images/timeline.png" width="500" height="375" alt="Features bg">
+                                        </div>
+                                    </div>                                                
+                                </div>
+                            </div>
+                            
+                        </div>
+
+                    </div>
+                </div>
+            </section>
+            
+            <!-- Features blocks -->
+            <section class="j">
+
+                <!-- Section background (needs .relative class on parent and next sibling elements) -->
+                <div class="_ z tu vj g_ ao w" aria-hidden="true"></div>
+                <div class="_ tn tt ti tw sn fu iw bg-gray-200 om ou"></div>
+
+                <div class="j sc tj fv vs">
+                    <div class="fy gn">
+                        <h3 class="h2 nw ce">Why should you employ our services?</h3>
+                        <!-- Items -->
+                        <div class="sg tj io ua mv yi ut ma yt">
+                            <!-- 1st item -->
+                            <div class="j ii oz un fs bg-white uy hx">
+                                <svg class="si ia ff rp nk" viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg">
+                                    <g fill="none" fill-rule="evenodd">
+                                        <rect class="ft " width="64" height="64" rx="32"></rect>
+                                        <g stroke-width="2">
+                                            <path class="fn hr" d="M34.743 29.714L36.57 32 27.43 43.429H24M24 20.571h3.429l1.828 2.286"></path>
+                                            <path class="fn cz" stroke-linecap="square" d="M34.743 41.143l1.828 2.286H40M40 20.571h-3.429L27.43 32l1.828 2.286"></path>
+                                            <path class="fn hr" d="M36.571 32H40"></path>
+                                            <path class="fn cz" d="M24 32h3.429" stroke-linecap="square"></path>
+                                        </g>
+                                    </g>
+                                </svg>
+                                <h4 class="cr ch cy cw re">24/7 Customer Assistance</h4>
+                                <p class="c_ ce">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                            </div>
+
+                            <!-- 2nd item -->
+                            <div class="j ii oz un fs bg-white uy hx">
+                                <svg class="si ia ff rp nk" viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg">
+                                    <g fill="none" fill-rule="evenodd">
+                                        <rect class="ft " width="64" height="64" rx="32"></rect>
+                                        <g stroke-width="2">
+                                            <path class="fn cz" d="M32 37.714A5.714 5.714 0 0037.714 32a5.714 5.714 0 005.715 5.714"></path>
+                                            <path class="fn cz" d="M32 37.714a5.714 5.714 0 015.714 5.715 5.714 5.714 0 015.715-5.715M20.571 26.286a5.714 5.714 0 005.715-5.715A5.714 5.714 0 0032 26.286"></path>
+                                            <path class="fn cz" d="M20.571 26.286A5.714 5.714 0 0126.286 32 5.714 5.714 0 0132 26.286"></path>
+                                            <path class="fn hr" d="M21.714 40h4.572M24 37.714v4.572M37.714 24h4.572M40 21.714v4.572" stroke-linecap="square"></path>
+                                        </g>
+                                    </g>
+                                </svg>
+                                <h4 class="cr ch cy cw re">Price Transparency</h4>
+                                <p class="c_ ce">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                            </div>
+
+                            <!-- 3rd item -->
+                            <div class="j ii oz un fs bg-white uy hx">
+                                <svg class="si ia ff rp nk" viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg">
+                                    <g fill="none" fill-rule="evenodd">
+                                        <rect class="ft" width="64" height="64" rx="32"></rect>
+                                        <g stroke-width="2" stroke-linecap="square">
+                                            <path class="fn cz" d="M29.714 40.358l-4.777 2.51 1.349-7.865-5.715-5.57 7.898-1.147L32 21.13l3.531 7.155 7.898 1.147L40 32.775"></path>
+                                            <path class="fn hr" d="M44.571 43.429H34.286M44.571 37.714H34.286"></path>
+                                        </g>
+                                    </g>
+                                </svg>
+                                <h4 class="cr ch cy cw re">Packaging Security</h4>
+                                <p class="c_ ce">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </section>
+            
+            <!-- Cta -->
+            <section class="tj vj">
+                <div class="sc tj fv vs">
+                    <div class="ls go">
+
+                        <!-- CTA box -->
+                        <div class="au uy fw fx gr gi hw" data-aos="zoom-y-out">
+                
+                            <div class="ii oz yo uo un">
+                
+                                <!-- CTA content -->
+                                <div class="rn gb gw ce yl">
+                                    <h3 class="h3 cz nk">Ready to get started?</h3>
+                                    <p class="cz ci hb">We have a generous free tier available to get you started right away.</p>
+                                </div>
+                
+                                <!-- CTA button -->
+                                <div>
+                                    <a class="n  ag aw ak" href="#0">Get started for free</a>
+                                </div>
+                
+                            </div>
+                
+                        </div>
+
+                    </div>
+                </div>
+            </section>
+            
+        </main>
+
+        <!-- Site footer -->
+        <footer>
+            <div class="sc tj fv vs">
+
+                <!-- Top area: Blocks -->
+                <div class="io dz uu fm ge uq border-gray-200">
+
+                    <!-- 1st block -->
+                    <div class="dc gd">
+                        <div class="nk">
+                            <!-- Logo -->
+                            <a class="in" href="index.html" aria-label="BookIt">BookIt
+                            </a>
+                        </div>
+                        <div class="cn c_">
+                            <a class="c_ pm hq pn po" href="#0">Terms</a> · <a class="c_ pm hq pn po" href="#0">Privacy Policy</a>
+                        </div>
+                    </div>
+
+                    <!-- 2nd block -->
+                    <div class="dh vh gv">
+                        <h6 class="he cc nk">Products</h6>
+                        <ul class="cn">
+                            <li class="nk">
+                                <a class="c_ pm hq pn po" href="#0">Coming Soon</a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <!-- 3rd block -->
+                    <div class="dh vh gv">
+                    </div>
+
+                    <!-- 4th block -->
+                    <div class="dh vh gv">
+                    </div>
+
+                    <!-- 5th block -->
+                    <div class="dh vh gd">
+                        <h6 class="he cc nk">Subscribe</h6>
+                        <p class="cn c_ nw">Get the latest news and articles to your inbox every month.</p>
+                        <form>
+                            <div class="ii ue nw">
+                                <div class="ij">
+                                    <label class="block cn b" for="newsletter">Email</label>
+                                    <div class="j ii un sp">
+                                        <input id="newsletter" type="email" class="s ij he fh fp lo cn" placeholder="Your email" required="">
+                                        <button type="submit" class="_ z ts" aria-label="Subscribe">
+                                            <span class="_ z to sn n_ tq aa" aria-hidden="true"></span>
+                                            <svg class="iz il ft ht tz s_" viewBox="0 0 12 12" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M11.707 5.293L7 .586 5.586 2l3 3H0v2h8.586l-3 3L7 11.414l4.707-4.707a1 1 0 000-1.414z" fill-rule="nonzero"></path>
+                                            </svg>
+                                        </button>
+                                    </div>
+                                    <!-- Success message -->
+                                    <!-- <p class="mt-2 text-green-600 text-sm">Thanks for subscribing!</p> -->
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+
+                </div>
+
+                <!-- Bottom area -->
+                <div class="me mb mx fg gt uq border-gray-200">
+
+                    <!-- Social links -->
+                    <ul class="ii nw vc vy vb">
+                        <li>
+                            <a class="ii us un c_ pm bg-white hover--bg-white-100 ub shadow hq pn po" href="#0" aria-label="Twitter">
+                                <svg class="iq if ft" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M24 11.5c-.6.3-1.2.4-1.9.5.7-.4 1.2-1 1.4-1.8-.6.4-1.3.6-2.1.8-.6-.6-1.5-1-2.4-1-1.7 0-3.2 1.5-3.2 3.3 0 .3 0 .5.1.7-2.7-.1-5.2-1.4-6.8-3.4-.3.5-.4 1-.4 1.7 0 1.1.6 2.1 1.5 2.7-.5 0-1-.2-1.5-.4 0 1.6 1.1 2.9 2.6 3.2-.3.1-.6.1-.9.1-.2 0-.4 0-.6-.1.4 1.3 1.6 2.3 3.1 2.3-1.1.9-2.5 1.4-4.1 1.4H8c1.5.9 3.2 1.5 5 1.5 6 0 9.3-5 9.3-9.3v-.4c.7-.5 1.3-1.1 1.7-1.8z"></path>
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="nv">
+                            <a class="ii us un c_ pm bg-white hover--bg-white-100 ub shadow hq pn po" href="#0" aria-label="Github">
+                                <svg class="iq if ft" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M16 8.2c-4.4 0-8 3.6-8 8 0 3.5 2.3 6.5 5.5 7.6.4.1.5-.2.5-.4V22c-2.2.5-2.7-1-2.7-1-.4-.9-.9-1.2-.9-1.2-.7-.5.1-.5.1-.5.8.1 1.2.8 1.2.8.7 1.3 1.9.9 2.3.7.1-.5.3-.9.5-1.1-1.8-.2-3.6-.9-3.6-4 0-.9.3-1.6.8-2.1-.1-.2-.4-1 .1-2.1 0 0 .7-.2 2.2.8.6-.2 1.3-.3 2-.3s1.4.1 2 .3c1.5-1 2.2-.8 2.2-.8.4 1.1.2 1.9.1 2.1.5.6.8 1.3.8 2.1 0 3.1-1.9 3.7-3.7 3.9.3.4.6.9.6 1.6v2.2c0 .2.1.5.6.4 3.2-1.1 5.5-4.1 5.5-7.6-.1-4.4-3.7-8-8.1-8z"></path>
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="nv">
+                            <a class="ii us un c_ pm bg-white hover--bg-white-100 ub shadow hq pn po" href="#0" aria-label="Facebook">
+                                <svg class="iq if ft" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M14.023 24L14 17h-3v-3h3v-2c0-2.7 1.672-4 4.08-4 1.153 0 2.144.086 2.433.124v2.821h-1.67c-1.31 0-1.563.623-1.563 1.536V14H21l-1 3h-2.72v7h-3.257z"></path>
+                                </svg>
+                            </a>
+                        </li>
+                    </ul>
+
+                    <!-- Copyrights note -->
+                    <div class="cn c_ np">© BookIt. All rights reserved.</div>
+
+                </div>
+
+            </div>
+        </footer>
+        <!-- Modal structure -->
+        
+        
+
+    </div>
+
+    <style>
+        /* The Modal (background) */
+        .modal {
+            display: none; /* Hidden by default */
+            position: fixed; /* Stay in place */
+            z-index: 1; /* Sit on top */
+            left: 0;
+            top: 0;
+            width: 100%; /* Full width */
+            height: 100%; /* Full height */
+            overflow: auto; /* Enable scroll if needed */
+            background-color: rgb(0,0,0); /* Fallback color */
+            background-color: rgba(0,0,0,0.4); /* Black w/ opacity */}
+
+            .modal-header h2{
+                text-align: center;
+                font-weight: 500;
+                font-size: 1.45rem;
+                margin-bottom: .35em;
+            }
+            /* Modal Content/Box */
+            .modal-content {
+            background-color: #fefefe;
+            margin: 15% auto; /* 15% from the top and centered */
+            padding: 20px;
+            border: 1px solid #888;
+            /* border-radius: 10px; */
+            width: 30%; /* Could be more or less, depending on screen size */
+            }
+
+            /* The Close Button */
+            .close {
+            color: #aaa;
+            float: right;
+            font-size: 28px;
+            font-weight: bold;
+            position: relative;
+            top: -5px;
+            }
+
+            .close:hover,
+            .close:focus {
+            color: black;
+            text-decoration: none;
+            cursor: pointer;
+            }   
+
+            .modal-body{
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                /* align-items: center; */
+            }
+
+            .form-group{
+                margin: .38em 0;
+                /* max-width: 100%; */
+            }
+
+            .form-input{
+                width: 100%;
+                border-radius: 5px;
+            }
+
+            .form-input:focus{
+                border-color: rgb(0 153 153 / var(--tw-text-opacity));
+            }
+
+
+    </style>
+
+    <script>
+        // Get the modal
+        var modal = document.getElementById("myModal");
+
+        // Get the button that opens the modal
+        var btn = document.getElementById("myBtn");
+
+        // Get the <span> element that closes the modal
+        var span = document.getElementsByClassName("close")[0];
+
+        // When the user clicks on the button, open the modal
+        btn.onclick = function() {
+        modal.style.display = "block";
+        }
+
+        // When the user clicks on <span> (x), close the modal
+        span.onclick = function() {
+        modal.style.display = "none";
+        }
+
+        // When the user clicks anywhere outside of the modal, close it
+        window.onclick = function(event) {
+        if (event.target == modal) {
+            modal.style.display = "none";
+        }
+        }
+    </script>
+    <script src="./js/vendors/alpinejs.min.js" defer=""></script>
+    <script src="./js/vendors/aos.js"></script>
+    <script src="./js/vendors/sticky.min.js"></script>
+    <script src="./js/main.js"></script>
+</body>
+</html>
